@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="OmdbRunnerTest" project="PostmanOmdb" tests="27" started="27" failures="0" errors="10" ignored="5">
+  <testsuite name="com.qa.PostmanOmdb.OmdbRunnerTest" time="0.669">
+    <testsuite name="Feature: Testing OMDB API" time="0.669">
+      <testsuite name="Scenario: Testing a status code" time="0.237">
+        <testcase name="Given a film exists with the Title Guardians of the Galaxy Two" classname="Scenario: Testing a status code" time="0.027"/>
+        <testcase name="When a user retrieves the film by the title Guardians of the Galaxy Two" classname="Scenario: Testing a status code" time="0.01"/>
+        <testcase name="Then the status code reads 200" classname="Scenario: Testing a status code" time="0.2"/>
+      </testsuite>
+      <testsuite name="Scenario: Testing both a status code and a field" time="0.077">
+        <testcase name="Given a film exists with the Title IT" classname="Scenario: Testing both a status code and a field" time="0.023"/>
+        <testcase name="When a user retrieves the film by the title IT" classname="Scenario: Testing both a status code and a field" time="0.001"/>
+        <testcase name="Then the status code reads 200" classname="Scenario: Testing both a status code and a field" time="0.014"/>
+        <testcase name="And the Rated Field is equal to R" classname="Scenario: Testing both a status code and a field" time="0.039"/>
+      </testsuite>
+      <testsuite name="Scenario: Testing the API using parameters" time="0.0" incomplete="true">
+        <error>java.lang.NullPointerException&#13;
+	at com.qa.PostmanOmdb.OmdbTestSteps.the_status_code_reads(OmdbTestSteps.java:83)&#13;
+	at ✽.Then the status code reads 200(src/test/intro.feature:17)&#13;
+&#13;
+</error>
+        <testcase name="Given a film exists with the Title &quot;Hop&quot;" classname="Scenario: Testing the API using parameters" time="0.0"/>
+        <testcase name="When a user retrieves the film by the title &quot;Hop&quot;" classname="Scenario: Testing the API using parameters" time="0.0"/>
+        <testcase name="Then the status code reads 200" classname="Scenario: Testing the API using parameters" time="0.0">
+          <error>java.lang.NullPointerException&#13;
+	at com.qa.PostmanOmdb.OmdbTestSteps.the_status_code_reads(OmdbTestSteps.java:83)&#13;
+	at ✽.Then the status code reads 200(src/test/intro.feature:17)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="And the Rated Field is equal to &quot;PG&quot;" classname="Scenario: Testing the API using parameters" time="0.027" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario Outline: Testing the API using a table" time="0.284">
+        <testsuite name="Examples:" time="0.284">
+          <testsuite name="| Hop | PG |" time="0.0" incomplete="true">
+            <error>java.lang.NullPointerException&#13;
+	at com.qa.PostmanOmdb.OmdbTestSteps.the_status_code_reads(OmdbTestSteps.java:83)&#13;
+	at ✽.Then the status code reads 200(src/test/intro.feature:24)&#13;
+&#13;
+</error>
+            <testcase name="Given a film exists with the Title &quot;Hop&quot;" classname="| Hop | PG |" time="0.0"/>
+            <testcase name="When a user retrieves the film by the title &quot;Hop&quot;" classname="| Hop | PG |" time="0.0"/>
+            <testcase name="Then the status code reads 200" classname="| Hop | PG |" time="0.0">
+              <error>java.lang.NullPointerException&#13;
+	at com.qa.PostmanOmdb.OmdbTestSteps.the_status_code_reads(OmdbTestSteps.java:83)&#13;
+	at ✽.Then the status code reads 200(src/test/intro.feature:24)&#13;
+&#13;
+</error>
+            </testcase>
+            <testcase name="And the Rated Field is equal to &quot;PG&quot;" classname="| Hop | PG |" time="0.03" ignored="true"/>
+          </testsuite>
+          <testsuite name="| It | R |" time="0.0" incomplete="true">
+            <error>java.lang.NullPointerException&#13;
+	at com.qa.PostmanOmdb.OmdbTestSteps.the_status_code_reads(OmdbTestSteps.java:83)&#13;
+	at ✽.Then the status code reads 200(src/test/intro.feature:24)&#13;
+&#13;
+</error>
+            <testcase name="Given a film exists with the Title &quot;It&quot;" classname="| It | R |" time="0.0"/>
+            <testcase name="When a user retrieves the film by the title &quot;It&quot;" classname="| It | R |" time="0.0"/>
+            <testcase name="Then the status code reads 200" classname="| It | R |" time="0.0">
+              <error>java.lang.NullPointerException&#13;
+	at com.qa.PostmanOmdb.OmdbTestSteps.the_status_code_reads(OmdbTestSteps.java:83)&#13;
+	at ✽.Then the status code reads 200(src/test/intro.feature:24)&#13;
+&#13;
+</error>
+            </testcase>
+            <testcase name="And the Rated Field is equal to &quot;R&quot;" classname="| It | R |" time="0.016" ignored="true"/>
+          </testsuite>
+          <testsuite name="| Up | PG |" time="0.0" incomplete="true">
+            <error>java.lang.NullPointerException&#13;
+	at com.qa.PostmanOmdb.OmdbTestSteps.the_status_code_reads(OmdbTestSteps.java:83)&#13;
+	at ✽.Then the status code reads 200(src/test/intro.feature:24)&#13;
+&#13;
+</error>
+            <testcase name="Given a film exists with the Title &quot;Up&quot;" classname="| Up | PG |" time="0.0"/>
+            <testcase name="When a user retrieves the film by the title &quot;Up&quot;" classname="| Up | PG |" time="0.0"/>
+            <testcase name="Then the status code reads 200" classname="| Up | PG |" time="0.0">
+              <error>java.lang.NullPointerException&#13;
+	at com.qa.PostmanOmdb.OmdbTestSteps.the_status_code_reads(OmdbTestSteps.java:83)&#13;
+	at ✽.Then the status code reads 200(src/test/intro.feature:24)&#13;
+&#13;
+</error>
+            </testcase>
+            <testcase name="And the Rated Field is equal to &quot;PG&quot;" classname="| Up | PG |" time="0.025" ignored="true"/>
+          </testsuite>
+          <testsuite name="| Saw | R |" time="0.0" incomplete="true">
+            <error>java.lang.NullPointerException&#13;
+	at com.qa.PostmanOmdb.OmdbTestSteps.the_status_code_reads(OmdbTestSteps.java:83)&#13;
+	at ✽.Then the status code reads 200(src/test/intro.feature:24)&#13;
+&#13;
+</error>
+            <testcase name="Given a film exists with the Title &quot;Saw&quot;" classname="| Saw | R |" time="0.0"/>
+            <testcase name="When a user retrieves the film by the title &quot;Saw&quot;" classname="| Saw | R |" time="0.0"/>
+            <testcase name="Then the status code reads 200" classname="| Saw | R |" time="0.0">
+              <error>java.lang.NullPointerException&#13;
+	at com.qa.PostmanOmdb.OmdbTestSteps.the_status_code_reads(OmdbTestSteps.java:83)&#13;
+	at ✽.Then the status code reads 200(src/test/intro.feature:24)&#13;
+&#13;
+</error>
+            </testcase>
+            <testcase name="And the Rated Field is equal to &quot;R&quot;" classname="| Saw | R |" time="0.06" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

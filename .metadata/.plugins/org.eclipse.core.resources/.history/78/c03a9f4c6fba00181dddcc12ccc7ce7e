@@ -1,0 +1,67 @@
+//Taxes
+//1.     Create the tax class, it contains 2 methods.
+//
+//a.    Method 1 -  which takes a salary and works out the percentage by which the salary will be taxed.
+//
+//b.    Method 2 - which works out the exact amount that the user will be taxed using a similar process to that in the first method. This amount should be returned and output to the console.
+//
+//These 2 methods should be able to work independently so it is ok if some of the code is repeated.
+//
+//2.    The Salaries are taxed as below:
+//
+//a.    0 – 14999: 0% Tax
+//
+//b.    15000 – 19999: 10% Tax
+//
+//c.    20000-29999: 15% Tax
+//
+//d.    30000-44999: 20% Tax
+//
+//e.    45000+: 25%: Tax
+//
+//3.    Finally combine the 2 methods so that the second method utilizes the first method to return the correct result.
+//
+//Secondly, build unit tests for this project.
+//
+//​Think about Equivalence Partitions and Boundary Value Analysis
+
+
+
+package com.qa.razzak.tax;
+
+public class tax {
+	double tax;
+
+	public double getTax(double input)
+	{
+		double i= input;
+		if ( i>=0 && i<15000)
+		{
+			tax=0;
+		
+		}
+		if ( i>=15000 && i<20000)
+		{
+			tax=0.10;
+		
+		}
+		if ( i>=20000 && i<30000)
+		{
+			tax=0.15;
+		
+		}
+		if ( i>=30000 && i<45000)
+		{
+			tax=0.20;
+		
+		}
+		if ( i>=45000)
+		{
+			tax=0.25;
+		
+		}
+		return tax;
+	}
+	
+	
+}

@@ -1,0 +1,6 @@
+package com.qa.PostmanOmdb;
+
+public class Constants {
+	public static final String report="C:\\Users\\Admin\\Documents\\Work\\PostmanOmdb/Reporting/passionTeaTest.html";
+
+}

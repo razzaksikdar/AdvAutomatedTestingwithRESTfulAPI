@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="HotelJsonSwTest" project="HotelSwaggerPractice" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="com.qa.HotelSwaggerPractice.HotelJsonSwTest" time="1.17">
+    <testcase name="DeleteTest" classname="com.qa.HotelSwaggerPractice.HotelJsonSwTest" time="1.04"/>
+    <testcase name="PostTest2" classname="com.qa.HotelSwaggerPractice.HotelJsonSwTest" time="0.038"/>
+    <testcase name="getObjectById" classname="com.qa.HotelSwaggerPractice.HotelJsonSwTest" time="0.024"/>
+    <testcase name="PostTest" classname="com.qa.HotelSwaggerPractice.HotelJsonSwTest" time="0.016"/>
+    <testcase name="GetTest" classname="com.qa.HotelSwaggerPractice.HotelJsonSwTest" time="0.052"/>
+  </testsuite>
+</testrun>

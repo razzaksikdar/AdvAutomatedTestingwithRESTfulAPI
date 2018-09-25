@@ -1,0 +1,6 @@
+package com.qa.TEST;
+
+
+public class Sample {
+	System.setProperty("webdriver.chrome.driver", "C:/Users/Admin/Desktop/chromedriver.exe");
+}

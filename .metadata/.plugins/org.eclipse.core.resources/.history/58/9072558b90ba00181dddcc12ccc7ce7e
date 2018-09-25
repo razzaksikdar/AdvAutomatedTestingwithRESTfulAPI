@@ -1,0 +1,24 @@
+package com.qa.razzak.automatedChromeP;
+
+import org.junit.Before;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.junit.*;
+
+public class AutoCase {
+	ChromeDriver driver = new ChromeDriver();
+	@Before
+	public void setup() {
+		System.getProperty("webdriver.chrome.driver", "C:/Users/Admin/Desktop/chromedriver.exe");
+	}
+	
+	@After
+	public void teardown() {
+		driver.quit();
+	}
+	
+	@Test
+	public void methodTest() {
+		driver.manage().window().maximize();
+		driver.get("https://www.google.co.uk/search?q=google&rlz=1C1CHBF_en-GBGB813GB814&oq=google&aqs=chrome..69i57j69i60l2j0l3.2643j0j7&sourceid=chrome&ie=UTF-8");
+	}
+}

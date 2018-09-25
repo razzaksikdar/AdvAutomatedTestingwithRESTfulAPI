@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TeaTesting.feature&apos; to &apos;test&apos;&#x0D;&#x0A;- Original project: &apos;passionTea-Exercise&apos;&#x0D;&#x0A;- Destination element: &apos;test&apos;&#x0D;&#x0A;- Original element: &apos;TeaTesting.feature&apos;" description="Copy file" element1="src/test/TeaTesting.feature" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1537450783151" target="/PassionTeaEx/src/test" units="0" version="1.0"/>
+</session>

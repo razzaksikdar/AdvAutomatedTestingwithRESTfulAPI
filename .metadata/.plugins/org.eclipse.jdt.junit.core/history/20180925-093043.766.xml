@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="OmdbRunnerTest" project="PostmanOmdb" tests="27" started="27" failures="2" errors="0" ignored="23">
+  <testsuite name="com.qa.PostmanOmdb.OmdbRunnerTest" time="0.476">
+    <testsuite name="Feature: Testing OMDB API" time="0.476">
+      <testsuite name="Scenario: Testing a status code" time="0.203">
+        <testcase name="Given a film exists with the Title Guardians of the Galaxy Two" classname="Scenario: Testing a status code" time="0.025"/>
+        <testcase name="When a user retrieves the film by the title Guardians of the Galaxy Two" classname="Scenario: Testing a status code" time="0.009"/>
+        <testcase name="Then the status code reads 200" classname="Scenario: Testing a status code" time="0.169"/>
+      </testsuite>
+      <testsuite name="Scenario: Testing both a status code and a field" time="0.003" incomplete="true">
+        <failure>java.lang.AssertionError: 1 expectation failed.
+JSON path Title doesn't match.
+Expected: It
+  Actual: Wreck-It Ralph
+&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)&#13;
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)&#13;
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)&#13;
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:483)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)&#13;
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:275)&#13;
+	at io.restassured.specification.ResponseSpecification$content$0.callCurrent(Unknown Source)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:258)&#13;
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:274)&#13;
+	at com.qa.PostmanOmdb.OmdbTestSteps.a_film_exists_with_the_Title_IT(OmdbTestSteps.java:104)&#13;
+	at ✽.Given a film exists with the Title IT(src/test/intro.feature:9)&#13;
+&#13;
+</failure>
+        <testcase name="Given a film exists with the Title IT" classname="Scenario: Testing both a status code and a field" time="0.002">
+          <failure>java.lang.AssertionError: 1 expectation failed.
+JSON path Title doesn't match.
+Expected: It
+  Actual: Wreck-It Ralph
+&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)&#13;
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)&#13;
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)&#13;
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:483)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)&#13;
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:275)&#13;
+	at io.restassured.specification.ResponseSpecification$content$0.callCurrent(Unknown Source)&#13;
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:258)&#13;
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:274)&#13;
+	at com.qa.PostmanOmdb.OmdbTestSteps.a_film_exists_with_the_Title_IT(OmdbTestSteps.java:104)&#13;
+	at ✽.Given a film exists with the Title IT(src/test/intro.feature:9)&#13;
+&#13;
+</failure>
+        </testcase>
+        <testcase name="When a user retrieves the film by the title IT" classname="Scenario: Testing both a status code and a field" time="0.0" ignored="true"/>
+        <testcase name="Then the status code reads 200" classname="Scenario: Testing both a status code and a field" time="0.0" ignored="true"/>
+        <testcase name="And the Rated Field is equal to R" classname="Scenario: Testing both a status code and a field" time="0.034" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario: Testing the API using parameters" time="0.015" incomplete="true">
+        <skipped/>
+        <testcase name="Given a film exists with the Title &quot;Hop&quot;" classname="Scenario: Testing the API using parameters" time="0.0" ignored="true"/>
+        <testcase name="When a user retrieves the film by the title &quot;Hop&quot;" classname="Scenario: Testing the API using parameters" time="0.0" ignored="true"/>
+        <testcase name="Then the status code reads 200" classname="Scenario: Testing the API using parameters" time="0.0" ignored="true"/>
+        <testcase name="And the Rated Field is equal to &quot;PG&quot;" classname="Scenario: Testing the API using parameters" time="0.015" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario Outline: Testing the API using a table" time="0.115">
+        <testsuite name="Examples:" time="0.115">
+          <testsuite name="| Hop | PG |" time="0.01" incomplete="true">
+            <skipped/>
+            <testcase name="Given a film exists with the Title &quot;Hop&quot;" classname="| Hop | PG |" time="0.0" ignored="true"/>
+            <testcase name="When a user retrieves the film by the title &quot;Hop&quot;" classname="| Hop | PG |" time="0.0" ignored="true"/>
+            <testcase name="Then the status code reads 200" classname="| Hop | PG |" time="0.0" ignored="true"/>
+            <testcase name="And the Rated Field is equal to &quot;PG&quot;" classname="| Hop | PG |" time="0.01" ignored="true"/>
+          </testsuite>
+          <testsuite name="| It | R |" time="0.015" incomplete="true">
+            <skipped/>
+            <testcase name="Given a film exists with the Title &quot;It&quot;" classname="| It | R |" time="0.0" ignored="true"/>
+            <testcase name="When a user retrieves the film by the title &quot;It&quot;" classname="| It | R |" time="0.0" ignored="true"/>
+            <testcase name="Then the status code reads 200" classname="| It | R |" time="0.0" ignored="true"/>
+            <testcase name="And the Rated Field is equal to &quot;R&quot;" classname="| It | R |" time="0.015" ignored="true"/>
+          </testsuite>
+          <testsuite name="| Up | PG |" time="0.009" incomplete="true">
+            <skipped/>
+            <testcase name="Given a film exists with the Title &quot;Up&quot;" classname="| Up | PG |" time="0.0" ignored="true"/>
+            <testcase name="When a user retrieves the film by the title &quot;Up&quot;" classname="| Up | PG |" time="0.0" ignored="true"/>
+            <testcase name="Then the status code reads 200" classname="| Up | PG |" time="0.0" ignored="true"/>
+            <testcase name="And the Rated Field is equal to &quot;PG&quot;" classname="| Up | PG |" time="0.009" ignored="true"/>
+          </testsuite>
+          <testsuite name="| Saw | R |" time="0.022" incomplete="true">
+            <skipped/>
+            <testcase name="Given a film exists with the Title &quot;Saw&quot;" classname="| Saw | R |" time="0.0" ignored="true"/>
+            <testcase name="When a user retrieves the film by the title &quot;Saw&quot;" classname="| Saw | R |" time="0.0" ignored="true"/>
+            <testcase name="Then the status code reads 200" classname="| Saw | R |" time="0.0" ignored="true"/>
+            <testcase name="And the Rated Field is equal to &quot;R&quot;" classname="| Saw | R |" time="0.022" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

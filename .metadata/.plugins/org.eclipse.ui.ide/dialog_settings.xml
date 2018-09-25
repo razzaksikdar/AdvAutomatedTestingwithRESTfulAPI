@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\Admin\Desktop\resources TEST\Selenium-master\Selenium-master\DDT1"/>
+		<item value="C:\Users\Admin\Desktop\resources TEST\Automated-Testing-Assessment-master"/>
+		<item value="C:\Users\Admin\Desktop\eclipseWorkSpace\passionTea-Exercise"/>
+		<item value="C:\Users\Admin\Desktop\SeleniumExamples-master\BlackJack Cucumber Example"/>
+		<item value="C:\Users\Admin\Desktop\SeleniumExamples-master\Stack Cucumber Example"/>
+		<item value="C:\Users\Admin\Desktop\Ex_Files_Selenium_EssT\Ex_Files_Selenium_EssT\Exercise Files\02_02"/>
+		<item value="C:\Users\Admin\Desktop\Ex_Files_Selenium_EssT\Ex_Files_Selenium_EssT\Exercise Files\01_04"/>
+		<item value="C:\Users\Admin\Desktop\SeleniumExamples-master\ShoppingWebsite"/>
+		<item value="C:\Users\Admin\Desktop\SeleniumExamples-master\POM"/>
+		<item value="C:\Users\Admin\Desktop\SeleniumExamples-master\FindByElements"/>
+		<item value="C:\Users\Admin\Documents\Java Lucy Hamilton\Assessment2Java"/>
+		<item value="C:\Users\Admin\Documents\Java Lucy Hamilton"/>
+	</list>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.m2e"/>
+		</list>
+	</section>
+</section>

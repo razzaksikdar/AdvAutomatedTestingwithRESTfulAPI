@@ -1,0 +1,8 @@
+package com.qa.PostmanOmdb;
+
+public class Constants {
+	static final String web="http://www.omdbapi.com";
+	public static final String url="http://www.omdbapi.com/?apikey=e78cd603&t='Guardians of the Galaxy Two'&Y=2017";
+	public static final String report="C:\\Users\\Admin\\Documents\\Work\\PostmanOmdb/Reporting/TestResult.html";
+
+}

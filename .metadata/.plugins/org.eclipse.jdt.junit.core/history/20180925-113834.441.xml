@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="HotelJsonSwTest" project="HotelSwaggerPractice" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.qa.HotelSwaggerPractice.HotelJsonSwTest" time="1.11">
+    <testcase name="PostTest" classname="com.qa.HotelSwaggerPractice.HotelJsonSwTest" time="1.031"/>
+    <testcase name="GetTest" classname="com.qa.HotelSwaggerPractice.HotelJsonSwTest" time="0.079"/>
+  </testsuite>
+</testrun>

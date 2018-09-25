@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestSuit" project="PostmanOmdb" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.qa.PostmanOmdb.TestSuit" time="1.345">
+    <testcase name="checkFilmTitle" classname="com.qa.PostmanOmdb.TestSuit" time="1.252"/>
+    <testcase name="exampleRestTestWhichShould200" classname="com.qa.PostmanOmdb.TestSuit" time="0.093"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,33 @@
+package com.qa.PassionTeaEx;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+
+public class TeaRunnerSteps {
+
+    WebDriver driver;
+    private static ExtentReports  report = new ExtentReports(Constants.report, true);
+    public ExtentTest test;
+
+    @Before
+    public void setup()
+    {
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Desktop/chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+    }
+
+    @After
+    public void teardown()
+    {
+        driver.quit();
+        report.endTest(test);
+        report.flush();
+}
+}

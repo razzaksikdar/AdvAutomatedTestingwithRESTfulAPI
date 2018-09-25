@@ -1,0 +1,7 @@
+package com.qa.razzak.tax;
+
+import junit.framework.TestCase;
+
+public class taxTest extends TestCase {
+
+}

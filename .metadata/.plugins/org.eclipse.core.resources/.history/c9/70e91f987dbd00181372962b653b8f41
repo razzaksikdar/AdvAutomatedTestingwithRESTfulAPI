@@ -1,0 +1,7 @@
+package com.qa.ATassessment;
+
+public class Constants {
+ 
+	public static final String report="C:\\Users\\Admin\\Documents\\Work\\ATassessment\\Reporting/JenkinUserTest.html";
+	
+}

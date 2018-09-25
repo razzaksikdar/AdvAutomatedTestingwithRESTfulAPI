@@ -1,0 +1,45 @@
+package com.qa.ATassessment;
+
+import static junit.framework.TestCase.assertEquals;
+
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+
+public class JenkinRunnerSteps {
+
+	WebDriver driver;
+    private static ExtentReports  reports = new ExtentReports(Constants.report, true);
+    public ExtentTest test;
+
+    @Before
+    public void setup()
+    {
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Desktop\\chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+    }
+
+    @After
+    public void teardown()
+    {
+        driver.quit();
+        reports.endTest(test);
+        reports.flush();
+    }
+	
+	@Test
+	public void test1() {
+		driver.get(Constants.mainUrl);
+//    	test=reports.startTest("Jenkin Test Report");
+//    	test.log(LogStatus.INFO,"Browser Started");
+//    	assertEquals(driver.getCurrentUrl(), Constants.mainUrl);
+	}
+	
+}

@@ -1,0 +1,30 @@
+package com.qa.PostmanOmdb;
+
+import org.junit.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import static org.hamcrest.Matchers.*;
+
+public class TestSuit {
+
+	@Test
+	public void exampleRestTestWhichShould200() {
+	    RestAssured.given()
+	    .contentType(ContentType.JSON)
+	    .when()
+	        .get("http://www.omdbapi.com/?apikey=e78cd603&t=IT&Y=2017")
+	    .then().statusCode(200);
+	    
+	}
+
+	@Test
+	public void checkFilmTitle() {
+		
+	   RestAssured.given()
+	    .contentType(ContentType.JSON)
+	    .when()
+	        .get("http://www.omdbapi.com/?apikey=e78cd603&t=IT&Y=2017")
+	    .then().body("Title", equalTo("It"));
+	}
+}

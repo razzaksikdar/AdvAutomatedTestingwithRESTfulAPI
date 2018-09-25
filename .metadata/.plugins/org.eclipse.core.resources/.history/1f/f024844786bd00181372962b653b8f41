@@ -1,0 +1,68 @@
+package com.qa.ATassessment;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+
+public class User {
+
+//	@FindBy(xpath = "")
+//	private WebElement ;
+//	
+//	@FindBy(id="")
+//	private WebElement ;
+//	
+	
+	@FindBy(xpath = "//*[@id=\"tasks\"]/div[4]/a[2]")
+	private WebElement ManageJenkinsLink;
+	
+	@FindBy(xpath = "//*[@id=\"management-links\"]/tbody/tr[15]/td[2]/div[1]/a")
+	private WebElement ManageUserLink;
+	
+	@FindBy(xpath = "//*[@id=\"tasks\"]/div[3]/a[2]")
+	private WebElement CreateUserLink;
+	
+	//Create User page>> add user action
+	
+	@FindBy(id="username")
+	private WebElement username;
+	
+	@FindBy(xpath = "//*[@id=\"main-panel\"]/form/div[1]/table/tbody/tr[2]/td[2]/input")
+	private WebElement password;
+	
+	@FindBy(xpath = "//*[@id=\"main-panel\"]/form/div[1]/table/tbody/tr[3]/td[2]/input")
+	private WebElement confirmPassword;
+	
+	@FindBy(xpath = "//*[@id=\"main-panel\"]/form/div[1]/table/tbody/tr[4]/td[2]/input")
+	private WebElement fullName;
+	
+	@FindBy(xpath = "//*[@id=\"main-panel\"]/form/div[1]/table/tbody/tr[5]/td[2]/input")
+	private WebElement email;
+	
+	@FindBy(id="yui-gen3-button")
+	private WebElement createUserBtn;
+	
+	public void manageJenkinLinkClick() {
+		ManageJenkinsLink.click();
+	}
+	
+	public void manageUserLinkClick() {
+		ManageUserLink.click();
+	}
+
+	public void createUserLinkClick() {
+		CreateUserLink.click();
+	}
+
+	public void addDetails(Actions action)
+	{
+		username.click();
+		username.sendKeys("matthewhunt");
+		
+		password.click();
+		password.sendKeys("Matttt");
+		
+		
+	}
+	
+}

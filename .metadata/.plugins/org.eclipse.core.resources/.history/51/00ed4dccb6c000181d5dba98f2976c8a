@@ -1,0 +1,87 @@
+package com.qa.HotelSwaggerPractice;
+
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
+import io.restassured.specification.RequestSpecification;
+import static io.restassured.RestAssured.*;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.junit.Test;
+
+public class HotelJsonSwTest {
+	private Response response;
+	private ValidatableResponse json;
+	private RequestSpecification request;
+	public static String url="http://localhost:8090/example/v1/hotels?page=0&size=100";
+	
+	@Test 
+	public void GetTest() {
+		given().contentType(ContentType.JSON).when().get(url).then()
+		.statusCode(200);
+	}
+
+	
+	@Test
+	public void PostTest() {
+		JSONObject obj =new JSONObject();
+		request=given().contentType(ContentType.JSON);
+		request.header("Content-Type", "application/json");
+		obj.put("city", "Dhaka");
+		obj.put("Description", "Five Star Hotel");
+		obj.put("name", "apar");
+		obj.put("rating", 4);
+		request.body(obj.toString());
+		response=request.post("http://localhost:8090/example/v1/hotels");
+		System.out.println("Post test1 response code: "+response.getStatusCode());
+
+		
+	}
+
+	@Test
+	public void PostTest2() {
+		JSONObject obj =new JSONObject();
+		request=given().contentType(ContentType.JSON);
+		request.header("Content-Type", "application/json");
+		obj.put("city", "Sylhet");
+		obj.put("Description", "Five Star Hotel");
+		obj.put("name", "Wari");
+		obj.put("rating", 4);
+		request.body(obj.toString());
+		response=request.post("http://localhost:8090/example/v1/hotels");
+		System.out.println("Post test2 response code: "+response.getStatusCode());
+		
+	}
+	
+	@Test
+	public void DeleteTest() {
+		
+		Response response = given().contentType(ContentType.JSON).when()
+				.delete("http://localhost:8090/example/v1/hotels/1");
+		System.out.println("Delete status code: "+response.getStatusCode());
+		System.out.println("Delete status code as string: "+response.asString());
+	}
+	
+	@Test
+	public void getObjectById() {
+		request=given().contentType(ContentType.JSON);
+		response= request.when().get("http://localhost:8090/example/v1/hotels");
+		
+		JSONObject obj=new JSONObject(response.body().asString());
+		JSONArray results = obj.getJSONArray("content");
+		
+		for (Object o: results)
+		{
+			JSONObject objx=(JSONObject) o;
+			String holtName=objx.getString("id");
+			
+			if(holtName.equals("23")) {
+				String js=objx.toString();
+				System.out.println(js);
+			}
+		
+		}
+		
+	}
+}
